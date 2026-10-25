@@ -1,0 +1,202 @@
+[
+  {
+    "month": 1,
+    "name": "Tháng Một – Mùa Mai Anh Đào Gọi Xuân",
+    "seasonTag": "Đông – Xuân (Khô lạnh & Nắng trong)",
+    "coverImage": "assets/images/hero/mai-anh-dao-dalat.jpg",
+    "featuredPlantIds": [
+      "mai-anh-dao",
+      "mimosa",
+      "lan-ngoc-diem",
+      "lan-kiem-dia-lan",
+      "hoa-tulip",
+      "trang-nguyen"
+    ],
+    "description": "Tiết trời Đà Lạt se lạnh 10–20°C với sương sớm bảng lảng và nắng vàng hanh thông. Những triền đồi Mai anh đào (Prunus cerasoides) bung nở hồng rực báo hiệu mùa xuân về trên cao nguyên.",
+    "viewingSpots": "Đường Trần Hưng Đạo, ven hồ Xuân Hương, dốc Đa Quý – Trại Mát, đồi chè Cầu Đất, khu vực hồ Tuyền Lâm và Mộng Đào Nguyên (Lạc Dương).",
+    "phenologyNote": "Thời điểm nở rộ của Mai anh đào phụ thuộc vào đợt rét đậm cuối năm và lượng mưa mùa thu; có thể dịch chuyển từ đầu tháng 1 đến giữa tháng 2 dương lịch."
+  },
+  {
+    "month": 2,
+    "name": "Tháng Hai – Sắc Xuân Địa Lan & Đào Rừng",
+    "seasonTag": "Mùa Xuân Cao Nguyên",
+    "coverImage": "assets/images/hero/hoa-lan-dalat.jpg",
+    "featuredPlantIds": [
+      "lan-kiem-dia-lan",
+      "lan-ho-diep",
+      "mai-anh-dao",
+      "lan-long-tu",
+      "hoa-cuc",
+      "hoa-ly"
+    ],
+    "description": "Tháng của những chậu Địa lan Hoàng Vũ, Thanh Ngọc vương giả tỏa hương thanh khiết và muôn loài hoa xuân khoe sắc tại Vườn hoa Thành phố và làng hoa Vạn Thành.",
+    "viewingSpots": "Vườn hoa Thành phố Đà Lạt, làng hoa Vạn Thành, làng hoa Hà Đông, các vườn địa lan tại Lạc Dương và Trại Mát.",
+    "phenologyNote": "Các loài lan xuân (Long tu, Hạc vỹ, Kim điệp) bắt đầu nhú nụ mạnh khi nắng ấm dần lên vào cuối tháng 2."
+  },
+  {
+    "month": 3,
+    "name": "Tháng Ba – Khúc Giao Mùa Phượng Tím",
+    "seasonTag": "Mùa Xuân – Chớm Hạ",
+    "coverImage": "assets/images/hero/phuong-tim-dalat.jpg",
+    "featuredPlantIds": [
+      "phuong-tim",
+      "lan-hac-vy",
+      "lan-phi-diep",
+      "do-quyen-langbiang",
+      "hoa-giay",
+      "cho-xanh"
+    ],
+    "description": "Bầu trời Đà Lạt xanh biếc không một gợn mây, những vòm tán Phượng tím (Jacaranda mimosifolia) bắt đầu bung nở tím biếc ven hồ Xuân Hương và các con dốc cổ kính.",
+    "viewingSpots": "Đường Nguyễn Thị Minh Khai (trước chợ Đà Lạt), đường Hai Bà Trưng, Trần Phú, Hoàng Văn Thụ và ven hồ Xuân Hương.",
+    "phenologyNote": "Phượng tím nở đẹp và bền nhất trong những tuần nắng ấm ít mưa rào đầu mùa."
+  },
+  {
+    "month": 4,
+    "name": "Tháng Tư – Mùa Lan Rừng & Nắng Mật",
+    "seasonTag": "Giao mùa Khô – Mưa",
+    "coverImage": "assets/images/hero/hoa-lan-dalat.jpg",
+    "featuredPlantIds": [
+      "lan-phi-diep",
+      "lan-thuy-tien",
+      "phuong-tim",
+      "hoa-cam-cu",
+      "dau-tay-da-lat",
+      "atiso"
+    ],
+    "description": "Những giò Thủy tiên (Kiều vuông), Phi điệp tím và Hoàng thảo bung hoa rực rỡ dưới hiên nhà gỗ; đồng thời là cuối vụ thu hoạch Dâu tây và Atisô ngọt đậm nhất.",
+    "viewingSpots": "Các nhà vườn sưu tầm hoa lan tại Đà Lạt – Di Linh – Đức Trọng và vùng chuyên canh Atisô Phường 12.",
+    "phenologyNote": "Những cơn mưa chuyển mùa cuối tháng 4 kích thích chồi non vươn mạnh trên khắp rừng thông."
+  },
+  {
+    "month": 5,
+    "name": "Tháng Năm – Cẩm Tú Cầu Trong Mưa Đầu Hạ",
+    "seasonTag": "Đầu mùa mưa mát lành",
+    "coverImage": "assets/images/hero/cam-tu-cau-dalat.jpg",
+    "featuredPlantIds": [
+      "cam-tu-cau",
+      "oai-huong",
+      "hoa-dong-tien",
+      "bo-da-lat",
+      "lan-thanh-dam"
+    ],
+    "description": "Mưa rào chiều phố núi mang lại độ ẩm dồi dào giúp những cánh đồng Cẩm tú cầu (Hydrangea macrophylla) và Oải hương (Lavandula) bung nở căng tràn sức sống.",
+    "viewingSpots": "Cánh đồng Cẩm tú cầu Trại Mát – Xuân Thọ, đồi Oải hương hồ Tuyền Lâm và Cầu Đất.",
+    "phenologyNote": "Màu sắc Cẩm tú cầu biến đổi tự nhiên từ xanh ngọc sang xanh lam đậm hoặc tím hồng tùy độ chua (pH) của đất từng khu vườn."
+  },
+  {
+    "month": 6,
+    "name": "Tháng Sáu – Sương Sớm Rừng Thông & Thảo Mộc",
+    "seasonTag": "Mùa mưa cao nguyên",
+    "coverImage": "assets/images/hero/rung-thong-suong-som.jpg",
+    "featuredPlantIds": [
+      "thong-ba-la",
+      "duong-xi-than-go",
+      "huong-thao",
+      "bac-ha",
+      "cam-tu-cau",
+      "thu-hai-duong"
+    ],
+    "description": "Mùa của những biển mây và rừng thông ba lá đẫm sương mù; các loài dương xỉ cổ đại, thu hải đường và vườn thảo mộc Hương thảo – Bạc hà xanh mướt mắt.",
+    "viewingSpots": "Đồi Thiên Phúc Đức, săn mây Cầu Đất, đường mòn sinh thái Vườn Quốc gia Bidoup – Núi Bà và hồ Tuyền Lâm.",
+    "phenologyNote": "Khi đi ngắm cảnh rừng mùa mưa nên khởi hành vào sáng sớm (5h30–9h00) trước khi mưa rào buổi chiều xuất hiện."
+  },
+  {
+    "month": 7,
+    "name": "Tháng Bảy – Nhịp Sống Xanh Nông Trại Đà Lạt",
+    "seasonTag": "Giữa mùa mưa ẩm mát",
+    "coverImage": "assets/images/hero/vuon-rau-xanh-dalat.jpg",
+    "featuredPlantIds": [
+      "xa-lach-da-lat",
+      "cai-xoan-kale",
+      "ca-chua-da-lat",
+      "ot-chuong-da-lat",
+      "bo-da-lat",
+      "phuc-bon-tu"
+    ],
+    "description": "Trong các nhà màng công nghệ cao và thung lũng nông sản, hàng chục giống rau ôn đới, cà chua cherry, ớt chuông và bơ sáp Lâm Đồng bước vào mùa thu hoạch rộ.",
+    "viewingSpots": "Các trang trại nông nghiệp công nghệ cao tại Xuân Thọ, Đa Nhim, Lạc Dương và Đơn Dương.",
+    "phenologyNote": "Độ ẩm không khí cao trên 85% là thời điểm người làm vườn cần chú ý tỉa thoáng gốc và phòng nấm cho hoa cảnh."
+  },
+  {
+    "month": 8,
+    "name": "Tháng Tám – Hương Quế Lan Hương & Mùa Thu Chớm Ngỏ",
+    "seasonTag": "Cuối hạ – Đầu thu",
+    "coverImage": "assets/images/hero/hoa-lan-dalat.jpg",
+    "featuredPlantIds": [
+      "lan-que-lan-huong",
+      "lan-vu-nu",
+      "hoa-hong",
+      "lan-y",
+      "chanh-day"
+    ],
+    "description": "Những giò Quế lan hương (Aerides odorata) và Vũ nữ vàng tỏa hương dịu ngọt trong tiết trời chớm thu dịu mát.",
+    "viewingSpots": "Làng hoa Vạn Thành và các không gian sân vườn biệt thự cổ dọc đường Trần Hưng Đạo – Lê Lai.",
+    "phenologyNote": "Thời điểm lý tưởng để giâm cành hoa hồng, cẩm tú cầu và hương thảo."
+  },
+  {
+    "month": 9,
+    "name": "Tháng Chín – Mùa Hồng Chín Đỏ & Thạch Thảo Tím",
+    "seasonTag": "Mùa Thu Đà Lạt",
+    "coverImage": "assets/images/hero/mai-anh-dao-dalat.jpg",
+    "featuredPlantIds": [
+      "hong-da-lat",
+      "thach-thao",
+      "cam-tu-cau",
+      "lan-cattleya",
+      "cu-den"
+    ],
+    "description": "Những vườn hồng (Diospyros kaki) tại Cầu Đất – Trại Mát bắt đầu chuyển sắc vàng cam rực rỡ và những luống Cúc thạch thảo tím nở dịu dàng trong gió thu.",
+    "viewingSpots": "Vườn hồng Trại Mát, đèo Mimosa, xã Xuân Trường – Cầu Đất và cung đường đèo Dran.",
+    "phenologyNote": "Đầu vụ thu hoạch hồng giòn và chuẩn bị những mẻ hồng treo gió Hoshigaki đầu tiên khi nắng thu hanh khô về."
+  },
+  {
+    "month": 10,
+    "name": "Tháng Mười – Nắng Thu Vàng & Mimosa Chớm Nở",
+    "seasonTag": "Mùa Thu – Chuyển Khô",
+    "coverImage": "assets/images/hero/mimosa-dalat.jpg",
+    "featuredPlantIds": [
+      "mimosa",
+      "hong-da-lat",
+      "huong-duong",
+      "thach-thao",
+      "lan-kim-tuyen"
+    ],
+    "description": "Mưa thưa dần nhường chỗ cho nắng thu trong vắt; những chùm Mimosa vàng đầu tiên bắt đầu bung nở bên cạnh những vườn hồng rụng lá chỉ còn trĩu quả đỏ.",
+    "viewingSpots": "Đèo Mimosa, đồi chè Cầu Đất, cung đường Tà Nung và vùng ngoại ô Đơn Dương – Đức Trọng.",
+    "phenologyNote": "Cuối tháng 10 đến tháng 11 cũng là mùa hoa Dã quỳ (Tithonia diversifolia) nhuộm vàng các triền đồi ngoại ô Đà Lạt."
+  },
+  {
+    "month": 11,
+    "name": "Tháng Mười Một – Mùa Hoa Hướng Dương, Mimosa & Cỏ Hồng",
+    "seasonTag": "Đầu Đông (Nắng vàng & Gió lạnh)",
+    "coverImage": "assets/images/hero/mimosa-dalat.jpg",
+    "featuredPlantIds": [
+      "mimosa",
+      "huong-duong",
+      "hoa-bat-tu",
+      "hoa-hong",
+      "hong-da-lat",
+      "sup-lo"
+    ],
+    "description": "Thời điểm giao mùa rực rỡ nhất cuối năm: Mimosa vàng óng, Hướng dương khoe sắc, Hoa hồng Vạn Thành vào phom cánh dày đẹp nhất và những đồi cỏ hồng đẫm sương mai.",
+    "viewingSpots": "Thung lũng Vàng – Suối Vàng, đèo Mimosa, đèo Tà Nung, làng hoa Vạn Thành và Thái Phiên.",
+    "phenologyNote": "Nhiệt độ ban đêm giảm xuống 12–14°C giúp kích thích phân hóa mầm hoa cho Mai anh đào và Địa lan."
+  },
+  {
+    "month": 12,
+    "name": "Tháng Mười Hai – Festival Hoa, Trạng Nguyên & Mùa Dâu Tây",
+    "seasonTag": "Mùa Đông Phố Núi",
+    "coverImage": "assets/images/hero/vuon-rau-xanh-dalat.jpg",
+    "featuredPlantIds": [
+      "trang-nguyen",
+      "hoa-cuc",
+      "hoa-ly",
+      "dau-tay-da-lat",
+      "atiso",
+      "lan-ho-diep"
+    ],
+    "description": "Khắp các con dốc Đà Lạt rực đỏ sắc hoa Trạng nguyên (Euphorbia pulcherrima), các làng hoa Thái Phiên – Hà Đông – Vạn Thành nhộn nhịp vào vụ hoa Tết và mùa Dâu tây bắt đầu chín ngọt.",
+    "viewingSpots": "Quanh hồ Xuân Hương, làng hoa Thái Phiên (ngắm nhà lồng thắp đèn đêm), làng hoa Vạn Thành, đường Nguyễn Công Trứ.",
+    "phenologyNote": "Cuối tháng 12 những cây Mai anh đào ăn nắng sớm trên sườn đồi bắt đầu hé những bông hồng đầu tiên."
+  }
+]

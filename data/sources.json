@@ -1,0 +1,32 @@
+[
+  {
+    "id": "powo",
+    "name": "Plants of the World Online (POWO) – Royal Botanic Gardens, Kew",
+    "url": "https://powo.science.kew.org/",
+    "role": "Cơ sở dữ liệu đối chiếu danh pháp khoa học được chấp nhận (Accepted Name), tên đồng nghĩa (Synonyms), họ thực vật và vùng phân bố tự nhiên toàn cầu."
+  },
+  {
+    "id": "wfo",
+    "name": "World Flora Online (WFO)",
+    "url": "https://www.worldfloraonline.org/",
+    "role": "Hệ thống phân loại thực vật thế giới kế thừa The Plant List, xác minh cấp bậc phân loại (Taxonomic Rank) và lịch sử danh pháp."
+  },
+  {
+    "id": "ipni",
+    "name": "International Plant Names Index (IPNI)",
+    "url": "https://www.ipni.org/",
+    "role": "Cơ sở dữ liệu chuẩn quốc tế về tác giả công bố danh pháp thực vật có mạch và năm công bố gốc."
+  },
+  {
+    "id": "gbif",
+    "name": "Global Biodiversity Information Facility (GBIF)",
+    "url": "https://www.gbif.org/",
+    "role": "Dữ liệu ghi nhận phân bố đa dạng sinh học toàn cầu và các tiêu bản thực vật thu thập tại cao nguyên Lâm Viên – Việt Nam."
+  },
+  {
+    "id": "cchhvn",
+    "name": "Cây cỏ Việt Nam (GS. Phạm Hoàng Hộ, Tập 1–3)",
+    "url": "https://powo.science.kew.org/",
+    "role": "Tài liệu thực vật học nền tảng tại Việt Nam đối chiếu tên tiếng Việt, tên địa phương và mô tả hình thái thực địa tại Đà Lạt – Lâm Đồng."
+  }
+]

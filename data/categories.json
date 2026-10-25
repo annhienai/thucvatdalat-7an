@@ -1,0 +1,86 @@
+[
+  {
+    "id": "hoa-da-lat",
+    "name": "Hoa Đà Lạt",
+    "volumeNumber": 1,
+    "volumeTitle": "Tập 1 – Những mùa hoa Đà Lạt",
+    "targetCount": 20,
+    "icon": "🌸",
+    "color": "#D9A8AC",
+    "accent": "#8A3B48",
+    "heroImage": "assets/images/hero/cam-tu-cau-dalat.jpg",
+    "description": "Những loài hoa biểu tượng làm nên danh xưng 'Thành phố ngàn hoa' trên cao nguyên Lâm Viên (1.500m), từ sắc tím Phượng tím bên hồ Xuân Hương, hồng phai Mai anh đào mùa xuân, vàng rực Mimosa đến những cánh đồng Cẩm tú cầu trong sương sớm."
+  },
+  {
+    "id": "hoa-lan",
+    "name": "Hoa lan",
+    "volumeNumber": 2,
+    "volumeTitle": "Tập 2 – Thế giới hoa lan",
+    "targetCount": 20,
+    "icon": "🌺",
+    "color": "#D9BD78",
+    "accent": "#6E521C",
+    "heroImage": "assets/images/hero/hoa-lan-dalat.jpg",
+    "description": "Bộ sưu tập các chi và loài thuộc họ Phong lan (Orchidaceae) đặc sắc của vùng núi Langbiang – Tây Nguyên và các giống lan thương phẩm nổi tiếng được thuần dưỡng trong điều kiện khí hậu mát lành của Đà Lạt."
+  },
+  {
+    "id": "cay-canh",
+    "name": "Cây cảnh và cây bóng mát",
+    "volumeNumber": 3,
+    "volumeTitle": "Tập 3 – Cây xanh phố núi",
+    "targetCount": 15,
+    "icon": "🌲",
+    "color": "#244A3B",
+    "accent": "#1B3A2E",
+    "heroImage": "assets/images/hero/rung-thong-suong-som.jpg",
+    "description": "Những tán cây kiến tạo diện mạo kiến trúc cảnh quan đô thị Đà Lạt, các loài cây lá kim ôn đới - á nhiệt đới, cây leo tường biệt thự cổ và cây nội thất thanh lọc không gian sống."
+  },
+  {
+    "id": "rau-nong-san",
+    "name": "Rau và cây nông nghiệp",
+    "volumeNumber": 4,
+    "volumeTitle": "Tập 4 – Vườn rau cao nguyên",
+    "targetCount": 15,
+    "icon": "🥬",
+    "color": "#83A88A",
+    "accent": "#2E5A39",
+    "heroImage": "assets/images/hero/vuon-rau-xanh-dalat.jpg",
+    "description": "Hệ thống cây rau ôn đới, củ quả và dược liệu nông nghiệp công nghệ cao làm nên thương hiệu nông sản Đà Lạt trứ danh như Atisô, Xà lách, Cải bó xôi, Cà rốt, Súp lơ và Đậu Hà Lan."
+  },
+  {
+    "id": "cay-an-qua",
+    "name": "Cây ăn quả",
+    "volumeNumber": 5,
+    "volumeTitle": "Tập 5 – Cây trái Đà Lạt",
+    "targetCount": 10,
+    "icon": "🍓",
+    "color": "#C96A6A",
+    "accent": "#7A2828",
+    "heroImage": "assets/images/hero/mai-anh-dao-dalat.jpg",
+    "description": "Những thức quả ngọt lành kết tinh từ khí hậu chênh lệch nhiệt độ ngày đêm cao của vùng núi cao nguyên: Dâu tây, Hồng giòn/Hồng treo gió, Bơ sáp, Chanh dây tím và Phúc bồn tử."
+  },
+  {
+    "id": "thuc-vat-rung",
+    "name": "Thực vật rừng",
+    "volumeNumber": 6,
+    "volumeTitle": "Tập 6 – Thực vật rừng và bảo tồn",
+    "targetCount": 10,
+    "icon": "🌿",
+    "color": "#4A6B53",
+    "accent": "#1E3624",
+    "heroImage": "assets/images/hero/rung-thong-suong-som.jpg",
+    "description": "Hệ thực vật rừng nguyên sinh cao nguyên Lâm Viên và Khu dự trữ sinh quyển thế giới Langbiang với các loài hạt trần cổ sinh, Thông 5 lá Đà Lạt, Thông đỏ, Pơ mu và Dương xỉ thân gỗ cần được gìn giữ nghiêm ngặt."
+  },
+  {
+    "id": "cay-gia-vi",
+    "name": "Cây gia vị và cây hữu ích",
+    "volumeNumber": 7,
+    "volumeTitle": "Tập 7 – Cây gia vị và những loài cây hữu ích",
+    "targetCount": 10,
+    "icon": "🌱",
+    "color": "#715641",
+    "accent": "#4A3525",
+    "heroImage": "assets/images/hero/vuon-rau-xanh-dalat.jpg",
+    "description": "Các loài thảo mộc tinh dầu châu Âu và gia vị truyền thống Việt Nam phát triển hương thơm nồng đượm trong tiết trời se lạnh của Đà Lạt: Hương thảo, Xạ hương, Bạc hà, Kinh giới, Gừng, Nghệ."
+  }
+]

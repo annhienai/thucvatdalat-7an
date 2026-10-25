@@ -1,0 +1,1449 @@
+/* ==========================================================================
+   AN NHIÊN – BÁCH KHOA TOÀN THƯ THỰC VẬT ĐÀ LẠT
+   AN NHIEN – DALAT BOTANICAL ENCYCLOPEDIA & AI GARDEN
+   Tác giả & Người sáng lập: TRỊNH THỊ AN – AN NHIÊN AI (TTA)
+   Phong cách: Luxury Botanical Garden • Digital Botanical Museum • Fine Art Editorial
+   Bảng màu chuẩn:
+   - Xanh thông (#244A3B)
+   - Xanh lá non (#83A88A)
+   - Kem sương (#F7F5ED)
+   - Vàng nắng (#D9BD78)
+   - Hồng hoa (#D9A8AC)
+   - Nâu đất (#715641)
+   - Trắng ngà (#FFFEFA)
+   ========================================================================== */
+
+:root {
+  --pine-green: #244A3B;
+  --pine-dark: #183529;
+  --pine-soft: #315E4C;
+  --leaf-green: #83A88A;
+  --leaf-light: #E6EFE8;
+  --mist-cream: #F7F5ED;
+  --mist-deep: #ECE8D9;
+  --sun-gold: #D9BD78;
+  --sun-gold-dark: #9E7E36;
+  --blossom-pink: #D9A8AC;
+  --blossom-soft: #F9EFF0;
+  --earth-brown: #715641;
+  --ivory-white: #FFFEFA;
+  --ink-text: #1F2E27;
+  --muted-text: #4F5E56;
+  --border-subtle: rgba(36, 74, 59, 0.14);
+  --border-gold: rgba(217, 189, 120, 0.55);
+  --shadow-soft: 0 12px 32px rgba(24, 53, 41, 0.08);
+  --shadow-elevated: 0 20px 48px rgba(24, 53, 41, 0.15);
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --font-serif: 'Playfair Display', 'Noto Serif', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Plus Jakarta Sans', 'Be Vietnam Pro', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --base-font-size: 17px;
+  --encyclopedia-scale: 1;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--base-font-size);
+  scroll-behavior: smooth;
+  background-color: var(--mist-cream);
+  color: var(--ink-text);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: var(--mist-cream);
+  color: var(--ink-text);
+  line-height: 1.7;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, .serif-heading {
+  font-family: var(--font-serif);
+  color: var(--pine-green);
+  line-height: 1.3;
+  margin-top: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--pine-green);
+  text-decoration: none;
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+/* Trạng thái Focus rõ ràng cho người lớn tuổi & điều hướng bàn phím */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--sun-gold);
+  outline-offset: 2px;
+}
+
+/* Tôn trọng tùy chọn giảm chuyển động của thiết bị */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Top Brand Bar */
+.top-brand-bar {
+  background: var(--pine-dark);
+  color: var(--mist-cream);
+  font-size: 0.88rem;
+  padding: 0.45rem 1.25rem;
+  border-bottom: 1px solid rgba(217, 189, 120, 0.25);
+}
+
+.top-brand-inner {
+  max-width: 1380px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem 1rem;
+}
+
+.top-brand-slogan {
+  color: var(--sun-gold);
+  font-style: italic;
+}
+
+.top-brand-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.top-brand-links a {
+  color: var(--mist-cream);
+  font-size: 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.top-brand-links a:hover {
+  color: var(--sun-gold);
+}
+
+/* Header & Navigation (14 mục tổ chức khoa học) */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 254, 250, 0.96);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-subtle);
+  box-shadow: 0 4px 20px rgba(36, 74, 59, 0.06);
+}
+
+.header-main {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0.7rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.brand-identity {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  min-width: 0;
+}
+
+/* Vị trí 1 ảnh chân dung tác giả: Thanh điều hướng */
+.nav-author-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 20%;
+  border: 2px solid var(--sun-gold);
+  box-shadow: 0 2px 8px rgba(36, 74, 59, 0.2);
+  flex-shrink: 0;
+}
+
+.brand-titles {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-title-vn {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 1.12rem;
+  color: var(--pine-green);
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+}
+
+.brand-title-en {
+  font-size: 0.76rem;
+  color: var(--earth-brown);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* Navigation bar */
+.primary-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+}
+
+.nav-link, .nav-dropdown-btn {
+  background: transparent;
+  border: none;
+  color: var(--ink-text);
+  font-weight: 600;
+  font-size: 0.92rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.nav-link:hover, .nav-dropdown-btn:hover, .nav-link.active {
+  background: var(--leaf-light);
+  color: var(--pine-green);
+}
+
+.nav-link-ai {
+  background: linear-gradient(135deg, var(--pine-green), var(--pine-soft));
+  color: var(--ivory-white) !important;
+  border: 1px solid var(--sun-gold);
+}
+
+.nav-link-ai:hover {
+  background: var(--pine-dark);
+  transform: translateY(-1px);
+}
+
+/* Dropdown menu */
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  min-width: 240px;
+  background: var(--ivory-white);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-elevated);
+  padding: 0.5rem;
+  display: none;
+  flex-direction: column;
+  gap: 0.2rem;
+  z-index: 1100;
+}
+
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown:focus-within .nav-dropdown-menu,
+.nav-dropdown.open .nav-dropdown-menu {
+  display: flex;
+}
+
+.nav-dropdown-menu a {
+  padding: 0.55rem 0.85rem;
+  border-radius: 8px;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--ink-text);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-dropdown-menu a:hover {
+  background: var(--mist-cream);
+  color: var(--pine-green);
+}
+
+/* Quick Access Secondary Bar for all 14 items */
+.quick-nav-strip {
+  background: var(--mist-cream);
+  border-top: 1px solid var(--border-subtle);
+  padding: 0.35rem 1.25rem;
+  overflow-x: auto;
+}
+
+.quick-nav-inner {
+  max-width: 1380px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  white-space: nowrap;
+}
+
+.quick-nav-chip {
+  font-size: 0.82rem;
+  padding: 0.28rem 0.7rem;
+  border-radius: 999px;
+  color: var(--pine-green);
+  background: var(--ivory-white);
+  border: 1px solid var(--border-subtle);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.quick-nav-chip:hover, .quick-nav-chip.active {
+  background: var(--pine-green);
+  color: var(--ivory-white);
+  border-color: var(--pine-green);
+}
+
+.mobile-menu-toggle {
+  display: none;
+  background: var(--pine-green);
+  color: var(--ivory-white);
+  border: 1px solid var(--sun-gold);
+  border-radius: var(--radius-sm);
+  padding: 0.5rem 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Hero Section Điện Ảnh (Phần VI) */
+.hero-section {
+  position: relative;
+  min-height: 620px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: var(--pine-dark);
+  color: var(--ivory-white);
+}
+
+.hero-slides-container {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1.1s ease-in-out;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-slide.active {
+  opacity: 1;
+}
+
+.hero-slide::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(16, 36, 28, 0.58) 0%,
+    rgba(24, 53, 41, 0.68) 55%,
+    rgba(24, 53, 41, 0.88) 100%
+  );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  max-width: 1120px;
+  width: 100%;
+  padding: 3.5rem 1.5rem 4.5rem;
+  text-align: center;
+}
+
+.hero-brand-line {
+  display: inline-block;
+  padding: 0.4rem 1.15rem;
+  border-radius: 999px;
+  background: rgba(255, 254, 250, 0.14);
+  border: 1px solid var(--sun-gold);
+  color: var(--sun-gold);
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 1.15rem;
+  backdrop-filter: blur(6px);
+}
+
+.hero-title {
+  color: var(--ivory-white);
+  font-size: clamp(2rem, 4.2vw, 3.35rem);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin-bottom: 1rem;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.45);
+}
+
+.hero-subtitle {
+  max-width: 780px;
+  margin: 0 auto 1.75rem;
+  font-size: clamp(1.05rem, 1.8vw, 1.28rem);
+  color: var(--mist-cream);
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+.hero-slide-caption-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(24, 53, 41, 0.78);
+  border: 1px solid rgba(217, 189, 120, 0.45);
+  color: var(--mist-cream);
+  padding: 0.35rem 1rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  margin-bottom: 1.6rem;
+}
+
+.hero-cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.85rem;
+  margin-bottom: 1.75rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.78rem 1.4rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 0.98rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.22s ease;
+}
+
+.btn-primary {
+  background: var(--sun-gold);
+  color: var(--pine-dark);
+  border-color: var(--sun-gold);
+}
+
+.btn-primary:hover {
+  background: #e5ca87;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(217, 189, 120, 0.3);
+}
+
+.btn-Pine {
+  background: var(--pine-green);
+  color: var(--ivory-white);
+  border-color: var(--pine-green);
+}
+
+.btn-Pine:hover {
+  background: var(--pine-dark);
+  transform: translateY(-2px);
+}
+
+.btn-outline-light {
+  background: rgba(255, 254, 250, 0.12);
+  color: var(--ivory-white);
+  border-color: rgba(255, 254, 250, 0.55);
+  backdrop-filter: blur(6px);
+}
+
+.btn-outline-light:hover {
+  background: var(--ivory-white);
+  color: var(--pine-dark);
+}
+
+.btn-outline-pine {
+  background: transparent;
+  color: var(--pine-green);
+  border-color: var(--pine-green);
+}
+
+.btn-outline-pine:hover {
+  background: var(--pine-green);
+  color: var(--ivory-white);
+}
+
+/* Điều khiển Hero Slideshow */
+.hero-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.hero-ctrl-btn {
+  background: rgba(255, 254, 250, 0.16);
+  color: var(--ivory-white);
+  border: 1px solid rgba(255, 254, 250, 0.4);
+  border-radius: 999px;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.86rem;
+  cursor: pointer;
+}
+
+.hero-ctrl-btn:hover {
+  background: var(--sun-gold);
+  color: var(--pine-dark);
+  border-color: var(--sun-gold);
+}
+
+.hero-dots {
+  display: flex;
+  gap: 0.45rem;
+}
+
+.hero-dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: rgba(255, 254, 250, 0.35);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.hero-dot.active {
+  background: var(--sun-gold);
+  transform: scale(1.25);
+}
+
+/* Thanh tìm kiếm lớn ngay dưới Banner (Phần VI) */
+.grand-search-wrapper {
+  max-width: 1180px;
+  margin: -2.4rem auto 2.5rem;
+  padding: 0 1.25rem;
+  position: relative;
+  z-index: 20;
+}
+
+.grand-search-card {
+  background: var(--ivory-white);
+  border: 2px solid var(--sun-gold);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem 2rem;
+  box-shadow: var(--shadow-elevated);
+}
+
+.grand-search-label {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--pine-green);
+  margin-bottom: 0.85rem;
+  text-align: center;
+}
+
+.grand-search-bar {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.grand-search-input {
+  flex: 1 1 320px;
+  padding: 0.9rem 1.2rem;
+  border: 1.5px solid var(--leaf-green);
+  border-radius: var(--radius-sm);
+  font-size: 1.05rem;
+  background: var(--mist-cream);
+  color: var(--ink-text);
+}
+
+.grand-search-suggestions {
+  margin-top: 0.85rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--muted-text);
+}
+
+.suggestion-chip {
+  background: var(--mist-cream);
+  border: 1px solid var(--border-subtle);
+  color: var(--pine-green);
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.suggestion-chip:hover {
+  background: var(--sun-gold);
+  color: var(--pine-dark);
+}
+
+/* Layout Sections */
+.section-block {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 3.5rem 1.25rem;
+}
+
+.section-alt {
+  background: var(--ivory-white);
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.section-header {
+  text-align: center;
+  max-width: 820px;
+  margin: 0 auto 2.5rem;
+}
+
+.section-eyebrow {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--earth-brown);
+  background: rgba(217, 189, 120, 0.25);
+  padding: 0.3rem 0.9rem;
+  border-radius: 999px;
+  margin-bottom: 0.65rem;
+}
+
+.section-title {
+  font-size: clamp(1.65rem, 3vw, 2.35rem);
+  margin-bottom: 0.75rem;
+}
+
+.section-desc {
+  color: var(--muted-text);
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+/* Giá trị cốt lõi 3 trụ cột */
+.core-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.pillar-card {
+  background: var(--ivory-white);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-md);
+  padding: 1.65rem;
+  box-shadow: var(--shadow-soft);
+  text-align: center;
+}
+
+.pillar-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Khối Chân dung & Câu chuyện thương hiệu Trịnh Thị An (Phần IV - Vị trí 2, 3, 4) */
+.author-feature-card {
+  background: linear-gradient(135deg, var(--ivory-white) 0%, var(--mist-cream) 100%);
+  border: 2px solid var(--sun-gold);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-soft);
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.author-portrait-frame {
+  text-align: center;
+}
+
+.author-portrait-img {
+  width: 100%;
+  max-width: 290px;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+  border-radius: 20px;
+  object-fit: cover;
+  object-position: center 18%;
+  border: 4px solid var(--sun-gold);
+  box-shadow: 0 16px 36px rgba(36, 74, 59, 0.22);
+}
+
+.author-portrait-caption {
+  margin-top: 0.85rem;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  color: var(--pine-green);
+  font-size: 1.08rem;
+}
+
+.author-portrait-sub {
+  font-size: 0.88rem;
+  color: var(--earth-brown);
+}
+
+.author-story-quote {
+  font-size: 1.08rem;
+  line-height: 1.8;
+  color: var(--ink-text);
+  background: rgba(255, 254, 250, 0.85);
+  border-left: 4px solid var(--sun-gold);
+  padding: 1.25rem 1.5rem;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  margin: 1rem 0 1.25rem;
+}
+
+.author-signature {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--pine-green);
+}
+
+/* Bộ lọc & Danh mục 7 nhóm thực vật (Phần VII & IX) */
+.category-tabs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.category-tab-btn {
+  background: var(--ivory-white);
+  border: 1.5px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 0.85rem 0.75rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.category-tab-btn:hover, .category-tab-btn.active {
+  background: var(--pine-green);
+  color: var(--ivory-white);
+  border-color: var(--sun-gold);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-soft);
+}
+
+.category-tab-btn.active .cat-count-badge {
+  background: var(--sun-gold);
+  color: var(--pine-dark);
+}
+
+.cat-count-badge {
+  display: inline-block;
+  font-size: 0.78rem;
+  padding: 0.1rem 0.55rem;
+  border-radius: 999px;
+  background: var(--mist-cream);
+  color: var(--earth-brown);
+  margin-top: 0.25rem;
+  font-weight: 700;
+}
+
+.filter-toolbar {
+  background: var(--ivory-white);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  margin-bottom: 1.75rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 1rem;
+  align-items: end;
+}
+
+.filter-field label {
+  display: block;
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--pine-green);
+  margin-bottom: 0.35rem;
+}
+
+.filter-field select,
+.filter-field input {
+  width: 100%;
+  padding: 0.65rem 0.85rem;
+  border: 1px solid var(--leaf-green);
+  border-radius: 8px;
+  background: var(--mist-cream);
+}
+
+/* Lưới Thẻ Hồ sơ Thực vật (100 loài) */
+.plants-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.plant-card {
+  background: var(--ivory-white);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.plant-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-elevated);
+  border-color: var(--sun-gold);
+}
+
+.plant-card-thumb-wrap {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  background: var(--mist-cream);
+  overflow: hidden;
+}
+
+.plant-card-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.plant-card-badges {
+  position: absolute;
+  top: 0.65rem;
+  left: 0.65rem;
+  right: 0.65rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.4rem;
+  pointer-events: none;
+}
+
+.badge-pill {
+  padding: 0.22rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  backdrop-filter: blur(6px);
+}
+
+.badge-verified {
+  background: rgba(36, 74, 59, 0.9);
+  color: var(--ivory-white);
+  border: 1px solid var(--sun-gold);
+}
+
+.badge-editing {
+  background: rgba(113, 86, 65, 0.9);
+  color: var(--ivory-white);
+}
+
+.badge-code {
+  background: rgba(255, 254, 250, 0.92);
+  color: var(--pine-green);
+  border: 1px solid var(--border-subtle);
+}
+
+.plant-card-body {
+  padding: 1.25rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.plant-card-cat {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--earth-brown);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.plant-card-title {
+  font-size: 1.28rem;
+  margin: 0.2rem 0;
+  color: var(--pine-green);
+}
+
+.plant-card-sci {
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: var(--earth-brown);
+  font-size: 0.95rem;
+  margin-bottom: 0.65rem;
+}
+
+.plant-card-meta {
+  font-size: 0.88rem;
+  color: var(--muted-text);
+  margin-bottom: 1rem;
+  display: grid;
+  gap: 0.25rem;
+}
+
+.plant-card-actions {
+  margin-top: auto;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.plant-card-actions .btn {
+  flex: 1;
+  padding: 0.55rem 0.75rem;
+  font-size: 0.88rem;
+}
+
+/* Bách Khoa Toàn Thư Điện Tử – Sách Khoa Học Nghệ Thuật (Phần XII) */
+.encyclopedia-book-shell {
+  background: linear-gradient(145deg, #1E3F32, #244A3B);
+  border: 3px solid var(--sun-gold);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  color: var(--ivory-white);
+  box-shadow: var(--shadow-elevated);
+}
+
+.book-top-controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(217, 189, 120, 0.35);
+  margin-bottom: 1.5rem;
+}
+
+.volume-selector-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.volume-btn {
+  background: rgba(255, 254, 250, 0.1);
+  color: var(--ivory-white);
+  border: 1px solid rgba(217, 189, 120, 0.4);
+  padding: 0.5rem 0.95rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.volume-btn.active, .volume-btn:hover {
+  background: var(--sun-gold);
+  color: var(--pine-dark);
+}
+
+.az-index-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 1.5rem;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 0.65rem;
+  border-radius: var(--radius-sm);
+}
+
+.az-letter-btn {
+  min-width: 34px;
+  height: 34px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 254, 250, 0.25);
+  background: transparent;
+  color: var(--ivory-white);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.az-letter-btn.active, .az-letter-btn:hover {
+  background: var(--sun-gold);
+  color: var(--pine-dark);
+}
+
+.book-Spread {
+  background: var(--ivory-white);
+  color: var(--ink-text);
+  border-radius: var(--radius-md);
+  border: 2px solid var(--sun-gold);
+  padding: 2.25rem;
+  min-height: 520px;
+  font-size: calc(1rem * var(--encyclopedia-scale));
+  box-shadow: inset 0 0 40px rgba(113, 86, 65, 0.08);
+  transition: opacity 0.25s ease;
+}
+
+.book-progress-wrap {
+  margin-top: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.book-progress-bar {
+  flex: 1;
+  height: 10px;
+  background: rgba(255, 254, 250, 0.2);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.book-progress-fill {
+  height: 100%;
+  background: var(--sun-gold);
+  width: 10%;
+  transition: width 0.3s ease;
+}
+
+/* Nhận diện cây bằng AI & Bác sĩ khu vườn (Phần X) */
+.ai-garden-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 2rem;
+}
+
+.upload-dropzone {
+  background: var(--ivory-white);
+  border: 2px dashed var(--pine-green);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  text-align: center;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.upload-dropzone:hover {
+  border-color: var(--sun-gold-dark);
+  background: var(--leaf-light);
+}
+
+.ai-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.ai-preview-item {
+  position: relative;
+  aspect-ratio: 1;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid var(--sun-gold);
+}
+
+.ai-preview-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ai-status-banner {
+  background: #FFF9E6;
+  border: 1.5px solid var(--sun-gold);
+  border-left: 5px solid var(--earth-brown);
+  border-radius: var(--radius-sm);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.25rem;
+  font-size: 0.94rem;
+}
+
+/* Nhật ký khu vườn An Nhiên (Phần XV) */
+.diary-layout {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 2rem;
+}
+
+.diary-timeline-bar {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.5rem;
+  margin: 1.25rem 0;
+}
+
+.stage-step {
+  background: var(--mist-cream);
+  border: 1.5px solid var(--border-subtle);
+  border-radius: 10px;
+  padding: 0.65rem 0.4rem;
+  text-align: center;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.stage-step.completed {
+  background: var(--leaf-light);
+  border-color: var(--pine-green);
+  color: var(--pine-green);
+}
+
+.stage-step.active {
+  background: var(--pine-green);
+  color: var(--ivory-white);
+  border-color: var(--sun-gold);
+}
+
+.before-after-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* So sánh 2 loài cây (Phần XVIII) */
+.compare-table-wrap {
+  overflow-x: auto;
+  background: var(--ivory-white);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-gold);
+  box-shadow: var(--shadow-soft);
+}
+
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.compare-table th,
+.compare-table td {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--border-subtle);
+  text-align: left;
+  vertical-align: top;
+}
+
+.compare-table th {
+  background: var(--mist-cream);
+  color: var(--pine-green);
+  width: 22%;
+  font-weight: 700;
+}
+
+/* Modal Hồ sơ Khoa học Chi tiết (Phần VIII, XIII, XIV) */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(16, 34, 27, 0.76);
+  backdrop-filter: blur(5px);
+  z-index: 2000;
+  display: none;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2rem 1rem;
+  overflow-y: auto;
+}
+
+.modal-backdrop.open {
+  display: flex;
+}
+
+.modal-dialog {
+  background: var(--ivory-white);
+  max-width: 1100px;
+  width: 100%;
+  border-radius: var(--radius-lg);
+  border: 2px solid var(--sun-gold);
+  box-shadow: var(--shadow-elevated);
+  overflow: hidden;
+  margin: auto 0;
+}
+
+.modal-header {
+  background: var(--pine-green);
+  color: var(--ivory-white);
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.modal-body {
+  padding: 2rem;
+}
+
+.profile-section-card {
+  background: var(--mist-cream);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.profile-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.kv-item {
+  background: var(--ivory-white);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-subtle);
+}
+
+.kv-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--earth-brown);
+  text-transform: uppercase;
+  display: block;
+}
+
+.kv-value {
+  font-weight: 600;
+  color: var(--ink-text);
+}
+
+/* Thanh công cụ đọc giọng nói Tiếng Việt (Phần XIII) */
+.tts-bar {
+  background: var(--leaf-light);
+  border: 1px solid var(--leaf-green);
+  border-radius: var(--radius-sm);
+  padding: 0.85rem 1.25rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+/* Lightbox Thư viện ảnh */
+.lightbox-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 22, 17, 0.92);
+  z-index: 2500;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.lightbox-backdrop.open {
+  display: flex;
+}
+
+.lightbox-content {
+  max-width: 980px;
+  width: 100%;
+  background: var(--ivory-white);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 2px solid var(--sun-gold);
+}
+
+/* Kết nối âm nhạc An Nhiên (Phần XXI) */
+.music-sanctuary-banner {
+  background: linear-gradient(135deg, #1E3F32 0%, #2F5C48 100%);
+  color: var(--ivory-white);
+  border: 2px solid var(--sun-gold);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  text-align: center;
+  box-shadow: var(--shadow-elevated);
+}
+
+/* Footer & Vị trí 5 ảnh chân dung tác giả */
+.site-footer {
+  background: var(--pine-dark);
+  color: var(--mist-cream);
+  padding: 3.5rem 1.25rem 2rem;
+  border-top: 3px solid var(--sun-gold);
+}
+
+.footer-grid {
+  max-width: 1340px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.footer-author-sig {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.25rem;
+  padding: 1rem;
+  background: rgba(255, 254, 250, 0.06);
+  border: 1px solid rgba(217, 189, 120, 0.35);
+  border-radius: var(--radius-md);
+}
+
+.footer-author-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 18%;
+  border: 2px solid var(--sun-gold);
+  flex-shrink: 0;
+}
+
+/* Toast Notification */
+.toast-container {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 3000;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.toast-msg {
+  background: var(--pine-dark);
+  color: var(--ivory-white);
+  border-left: 4px solid var(--sun-gold);
+  padding: 0.85rem 1.25rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow-elevated);
+  font-size: 0.92rem;
+}
+
+/* Responsive (Điện thoại & Máy tính bảng) */
+@media (max-width: 992px) {
+  .author-feature-card,
+  .ai-garden-grid,
+  .diary-layout,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mobile-menu-toggle {
+    display: inline-flex;
+  }
+
+  .primary-nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--border-subtle);
+  }
+
+  .primary-nav.mobile-open {
+    display: flex;
+  }
+
+  .header-main {
+    flex-wrap: wrap;
+  }
+
+  .diary-timeline-bar {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-section {
+    min-height: 520px;
+  }
+  .grand-search-card {
+    padding: 1.25rem;
+  }
+  .book-Spread {
+    padding: 1.25rem;
+  }
+  .before-after-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Chế độ In & Xuất PDF Khổ A4 (Phần XIV) */
+#print-area-sheet {
+  display: none;
+}
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 15mm;
+  }
+
+  body {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+    font-size: 11.5pt;
+  }
+
+  body.print-mode-active > *:not(#print-area-sheet) {
+    display: none !important;
+  }
+
+  body.print-mode-active #print-area-sheet {
+    display: block !important;
+  }
+
+  .print-cover-page {
+    page-break-after: always;
+    border: 2px solid #244A3B;
+    padding: 18mm;
+    text-align: center;
+  }
+
+  .print-species-page {
+    page-break-inside: avoid;
+    margin-bottom: 12mm;
+    border-bottom: 1px solid #CCCCCC;
+    padding-bottom: 8mm;
+  }
+
+  body.print-eco-mode .print-art-image {
+    max-width: 120px !important;
+    filter: grayscale(20%);
+  }
+}
